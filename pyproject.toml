@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "dib3-utils"
+version = "0.1.0"
+description = "Ferramentas para o cálculo de depósitos interbancários (DI) da B3."
+authors = ["renanmoretto <himynameisrenan@outlook.com>"]
+readme = "README.md"
+packages = [{include = "dib3_utils"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 80
+
+[tool.ruff.format]
+quote-style = "single"
