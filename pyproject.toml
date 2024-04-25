@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "dib3-utils"
 version = "0.1.0"
-description = "Ferramentas para o cálculo de depósitos interbancários (DI) da B3."
+description = "Biblioteca com ferramentas úteis para cálculos com contratos de depósitos interbancários (DI) da B3."
 authors = ["renanmoretto <himynameisrenan@outlook.com>"]
 readme = "README.md"
 packages = [{include = "dib3_utils"}]
