@@ -3,7 +3,7 @@ import math
 
 from typing import Callable, Any
 
-from . import _dias_uteis as dus
+import dias_uteis as dus
 
 DI_FINAL_NOMINAL_VALUE = 100_000
 _CONTRACT_LETTERS_MONTH = {
@@ -68,7 +68,7 @@ def dias_uteis_vencimento(
     if not date:
         date = datetime.date.today()
 
-    return dus.diff_du(date, vencimento(ticker))
+    return dus.diff(date, vencimento(ticker))
 
 
 @_verify_ticker
